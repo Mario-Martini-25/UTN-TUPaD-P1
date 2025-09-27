@@ -287,3 +287,18 @@ for dia in range(len(ventas[0])): # se obtiene la cantidad de días con la longi
         
     print(f"La mayor venta del productos {mayor_venta} fue el día {dia_mayor_venta}")
 print()
+
+
+mayor_venta_producto = 0
+prod_mas_vendido = 0
+
+for producto in ventas:
+    total_producto = 0
+    for dia in producto:
+        total_producto += dia # se calcula el total de la venta en la semana
+    if total_producto > mayor_venta_producto: # se valora con los anteriores
+        mayor_venta_producto = total_producto
+        prod_mas_vendido = ventas.index(producto) # se obtiene la posición del producto mas vendido
+print()
+print(f"El producto más vendido en la semana fue {prod_mas_vendido+1} con {mayor_venta_producto} ventas")
+print()
