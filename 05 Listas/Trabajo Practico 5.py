@@ -270,7 +270,7 @@ ventas =[
 for producto in ventas:
     total_producto = 0
     for dia in producto:
-        total_producto += producto
+        total_producto += dia
     print(f"El total de las ventas del producto {producto+1} fueron: {total_producto}")
 
 
@@ -285,7 +285,7 @@ for dia in range(len(ventas[0])): # se obtiene la cantidad de días con la longi
             mayor_venta = venta_dia
             dia_mayor_venta = dia+1
         
-    print(f"La mayor venta del productos {mayor_venta} fue el día {dia_mayor_venta}")
+    print(f"La mayor venta de productos {mayor_venta} fue el día {dia_mayor_venta}")
 print()
 
 
