@@ -16,11 +16,12 @@ imprimir_hola_mundo()
 
 def saludar_usuario(nombre):
     # Imprime un saludo con el nombre con que se llama a la función
-    print (f"Hola {nombre}!")
+    return (f"Hola {nombre}!")
 
 nombre_usuario = input("Ingrese su nombre: ")
 
-saludar_usuario(nombre_usuario)
+saludo_a_imprimir = saludar_usuario(nombre_usuario)
+print(saludo_a_imprimir)
 
 
 # 3) Crear una función llamada informacion_personal(nombre, apellido,
