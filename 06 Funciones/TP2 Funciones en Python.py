@@ -161,7 +161,7 @@ print (f"El equivalente a {celsius} ºC es {celsius_a_fahrenheit(celsius)} grado
 # Solicitar los números al usuario y mostrar el resultado usando esta
 # función.
 
-def calcular_promedio(a, b, c):
+def calcular_promedio(num1, num2, num3):
     promedio = (num1 + num2 + num3) / 3
     return promedio
 
